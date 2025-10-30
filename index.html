@@ -11,14 +11,44 @@
     body { font-family: "Tajawal", "Noto Kufi Arabic", sans-serif; background:#0b1322; color:#fff; }
     .navbar { background:#f0f0f0; }
     .navbar .nav-link, .navbar-brand { color:var(--primary)!important; font-weight:600; }
-    .hero { min-height:100vh; background:url('.jpg') center/cover no-repeat; display:flex; align-items:center; position:relative; overflow:hidden; }
-    .hero h1 span { color:#4e9eff; }
-    .hero-portrait { width:100%; max-width:380px; height:auto; display:block; margin:0 auto; border-radius:1rem; filter:drop-shadow(0 10px 25px rgba(0,0,0,.5)); opacity:0; transform:translateY(30px); transition:all .8s ease; }
-    .hero.show .hero-portrait { opacity:1; transform:translateY(0); }
-    @media(max-width:768px){
-      .hero { flex-direction:column; text-align:center; justify-content:center; }
-      .hero-portrait { margin-top:2rem; max-width:260px; }
-    }
+    .hero {
+min-height:100vh;
+background:linear-gradient(180deg, rgba(11,18,32,.9), rgba(11,18,34,.95)), url('images/background.jpeg') center/cover no-repeat;
+display:flex;
+align-items:center;
+justify-content:center;
+padding:6rem 1rem 3rem;
+text-align:center;
+}
+.hero-content {
+max-width:800px;
+margin:auto;
+}
+.hero h1 { font-size:2.5rem; line-height:1.3; }
+.hero h1 span { color:#4e9eff; }
+.hero p { font-size:1.1rem; color:#d0d0d0; margin-top:1rem; }
+.hero .btn-primary { margin-top:1.5rem; padding:.8rem 2rem; font-size:1.1rem; }
+.hero-portrait {
+width:160px;
+height:auto;
+border-radius:50%;
+margin:1.5rem auto 0;
+display:block;
+filter:drop-shadow(0 8px 18px rgba(0,0,0,.45));
+opacity:0;
+transform:translateY(20px);
+transition:all .8s ease;
+}
+.hero.show .hero-portrait { opacity:1; transform:translateY(0); }
+
+
+@media(min-width:768px){
+.hero { text-align:right; padding:8rem 2rem; }
+.hero-content { display:flex; align-items:center; justify-content:space-between; text-align:right; }
+.hero-text { flex:1; padding-inline-end:2rem; }
+.hero h1 { font-size:3rem; }
+.hero-portrait { width:280px; margin:0; }
+}
     .btn-primary { background:var(--primary); border-color:var(--primary); }
     .btn-primary:hover { background:#0a49f6; border-color:#0a49f6; }
     .section-title { color:var(--primary); font-weight:800; }
@@ -48,8 +78,18 @@
       </div>
     </div>
   </nav>
+  <header class="hero">
+<div class="hero-content">
+<div class="hero-text">
+<h1 class="fw-bold">عادل محمود جودة<br><span>مراجع مالي للقطاع غير الربحي</span></h1>
+<p>متخصص في تدقيق الحسابات وإصدار القوائم المالية وفق المعايير الدولية، لتعزيز الشفافية والحوكمة المالية في الجمعيات والمؤسسات غير الربحية.</p>
+<a href="#projects" class="btn btn-primary btn-lg">شاهد الأعمال</a>
+</div>
+<img src="1.png" alt="عادل جودة" class="hero-portrait" loading="eager" />
+</div>
+</header>
 
-  <header class="hero pt-5">
+  <!-- <header class="hero pt-5">
     <div class="container py-5">
       <div class="row align-items-center">
         <div class="col-lg-7">
@@ -62,7 +102,7 @@
         </div>
       </div>
     </div>
-  </header>
+  </header> -->
 
   <!-- Services -->
 

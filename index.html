@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>عادل محمود جودة | مراجع مالي قطاع غير ربحي</title>
+  <!-- Bootstrap 5 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <!-- Bootstrap Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet" />
+  <style>
+    :root {
+      --primary:#3a6cf4;
+      --dark:#0b1322;
+    }
+    body { font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Noto Kufi Arabic", Tajawal, Arial, sans-serif; background:#0b1322; color:#fff; }
+    .navbar { background: #f0f0f0; }
+    .navbar .nav-link, .navbar-brand { color: var(--primary) !important; font-weight:600; }
+    .hero {
+      min-height: 100vh;
+      background: url('images/background.jpeg') center/cover fixed no-repeat, linear-gradient(180deg, rgba(11,18,32,.6), rgba(11,18,34,.9));
+      display:flex; align-items:center;
+    }
+    .hero h1 span { color: #4e9eff; }
+    .btn-primary { background: var(--primary); border-color: var(--primary); }
+    .btn-primary:hover { background:#0a49f6; border-color:#0a49f6; }
+    .section-title { color: var(--primary); font-weight:800; }
+    .card { border:0; box-shadow: 0 5px 25px rgba(1,1,1,.15); }
+    .projects { background:#000016; }
+    footer { background:#000016; }
+    .social a { color:#fff; font-size:1.3rem; margin-inline-end:.75rem; }
+    .timeline { position: relative; }
+    .timeline::before { content:""; position:absolute; inset-inline-start:18px; top:0; bottom:0; width:2px; background:rgba(255,255,255,.25);} 
+    .timeline-item { position:relative; padding-inline-start:3rem; padding-block:1rem; }
+    .timeline-item::before { content:""; position:absolute; width:12px; height:12px; border-radius:50%; background:var(--primary); inset-inline-start:12px; top:1.35rem; box-shadow:0 0 0 3px rgba(58,108,244,.25); }
+    .badge-soft { background:rgba(58,108,244,.15); color:#cfe0ff; border:1px solid rgba(58,108,244,.35);} 
+    .contact-card i { font-size:2rem; color:var(--primary);} 
+    @media (max-width: 576px){ .hero { text-align:center; } }
+    /* Portrait styles */
+    .hero-portrait{display:block;max-width:400px;width:100%;height:auto;border-radius:1.25rem;filter:drop-shadow(0 12px 28px rgba(0,0,0,.45));opacity:0;transform:translateY(10px) scale(.98);transition:transform .4s ease, opacity .5s ease}
+  .hero.show .hero-portrait{opacity:1;transform:translateY(0) scale(1)}
+  .hero-portrait:hover{transform:translateY(-4px) scale(1.02)}
+</style>
+</head>
+<body>
+  <!-- Nav -->
+  <nav class="navbar navbar-expand-lg fixed-top shadow-sm">
+    <div class="container">
+      <a class="navbar-brand fw-bold" href="#">عادل جودة</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="mainNav">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+          <li class="nav-item"><a class="nav-link" href="#services">الخدمات</a></li>
+          <li class="nav-item"><a class="nav-link" href="#experience">الخبرات</a></li>
+          <li class="nav-item"><a class="nav-link" href="#projects">المشاريع</a></li>
+          <li class="nav-item"><a class="nav-link" href="#education">التعليم</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">تواصل</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <header class="hero pt-5">
+    <div class="container py-5">
+      <div class="row align-items-center gap-10 flex-lg-row">
+          <div class="col-lg-7 mt-10 mt-lg-0 text-center text-lg-start">
+            <img src="1.png" alt="عادل جودة" class="hero-portrait img-fluid" loading="eager"/>
+          </div>
+        <div class="col-lg-7">
+          <h1 class="display-5 fw-bold"> عادل محمود<br><span>مراجع مالي للجمعيات والقطاع غير الربحي</span></h1>
+          <p class="lead mt-3">أساعد الجهات غير الربحية على تعزيز الحوكمة، الالتزام بالمعايير، وإدارة المخاطر بفعالية.</p>
+          <div class="d-flex gap-5 flex-wrap mt-4">
+            <a href="#projects" class="btn btn-primary btn-lg">شاهد الأعمال</a>
+            <div class="social d-flex align-items-center gap-3">
+              <a href="https://www.linkedin.com/in/adel-mahmoud-bb737321b/" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
+            </div>
+          </div>
+          
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Services -->
+  <section id="services" class="py-5">
+    <div class="container">
+      <h2 class="section-title text-center mb-4">الخدمات</h2>
+      <div class="row g-4 justify-content-center">
+        <div class="col-sm-10 col-md-6 col-lg-4">
+          <div class="card h-100 text-center p-4">
+            <div><i class="bi bi-check2-square display-4 text-primary"></i></div>
+            <div class="card-body">
+              <h3 class="h5">المراجعة المالية الخارجية</h3>
+              <p class="text-muted">فحص القوائم المالية للجمعيات وفق المعايير الدولية وإصدار تقارير مهنية مستقلة.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-10 col-md-6 col-lg-4">
+          <div class="card h-100 text-center p-4">
+            <div><i class="bi bi-shield-check display-4 text-primary"></i></div>
+            <div class="card-body">
+              <h3 class="h5">حوكمة القطاع غير الربحي</h3>
+              <p class="text-muted">تصميم ومراجعة السياسات والإجراءات، مواءمة اللوائح، وتعزيز الشفافية والامتثال.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-10 col-md-6 col-lg-4">
+          <div class="card h-100 text-center p-4">
+            <div><i class="bi bi-graph-up-arrow display-4 text-primary"></i></div>
+            <div class="card-body">
+              <h3 class="h5">إدارة المخاطر والرقابة الداخلية</h3>
+              <p class="text-muted">تقييم الضوابط الداخلية، خرائط المخاطر، وخطط المعالجة لضمان كفاءة العمليات.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-10 col-md-6 col-lg-4">
+          <div class="card h-100 text-center p-4">
+            <div><i class="bi bi-journal-check display-4 text-primary"></i></div>
+            <div class="card-body">
+              <h3 class="h5">إعداد القوائم والسياسات</h3>
+              <p class="text-muted">إعداد القوائم المالية، أدلة السياسات والإجراءات، والتقارير السنوية للجهات.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Experience -->
+  <section id="experience" class="py-5 projects">
+    <div class="container">
+      <h2 class="section-title text-center mb-4">الخبرات</h2>
+      <div class="row justify-content-center">
+        <div class="col-lg-10">
+          <div class="timeline">
+            <div class="timeline-item">
+              <div class="d-flex justify-content-between flex-wrap gap-2">
+                <div>
+                  <h3 class="h5 mb-1">Non Profit Sector Auditor — <span class="text-info">SFAI Saudi Arabia</span></h3>
+                  <div class="small ">دوام كامل · جدة، مكة المكرمة، السعودية</div>
+                </div>
+                <span class="badge badge-soft rounded-pill align-self-start">يونيو 2022 — حتى الآن</span>
+              </div>
+              <ul class="mt-3 text-white-50 mb-0">
+                <li>مراجعة الجمعيات والجهات غير الربحية وإصدار تقارير الامتثال.</li>
+                <li>مواءمة الممارسات مع المعايير الدولية والتشريعات المحلية.</li>
+              </ul>
+            </div>
+
+            <div class="timeline-item">
+              <div class="d-flex justify-content-between flex-wrap gap-2">
+                <div>
+                  <h3 class="h5 mb-1">Junior Auditor — <span class="text-info">SFAI CONSULTING PERU</span></h3>
+                </div>
+                <span class="badge badge-soft rounded-pill">2022 — حتى الآن</span>
+              </div>
+              <p class="mt-3 text-white-50 mb-0">المشاركة في أعمال المراجعة وإعداد أوراق العمل.</p>
+            </div>
+
+            <div class="timeline-item">
+              <div class="d-flex justify-content-between flex-wrap gap-2">
+                <div>
+                  <h3 class="h5 mb-1">Salesperson — <span class="text-info">Gouda Motors</span></h3>
+                </div>
+                <span class="badge badge-soft rounded-pill">2013 — 2022</span>
+              </div>
+              <p class="mt-3 text-white-50 mb-0">إدارة المبيعات وخدمة العملاء.</p>
+            </div>
+
+            <div class="timeline-item">
+              <div class="d-flex justify-content-between flex-wrap gap-2">
+                <div>
+                  <h3 class="h5 mb-1">Salesperson (Own branch) — <span class="text-info">TAKI VITA</span></h3>
+                </div>
+                <span class="badge badge-soft rounded-pill">يونيو 2012 — 2019</span>
+              </div>
+              <p class="mt-3 text-white-50 mb-0">إدارة فرع مستقل ومتابعة العمليات اليومية.</p>
+            </div>
+
+            <div class="timeline-item">
+              <div class="d-flex justify-content-between flex-wrap gap-2">
+                <div>
+                  <h3 class="h5 mb-1">Summer Trainee — <span class="text-info">Awad For Financial Consulting</span></h3>
+                  <div class="small text-muted">مصر</div>
+                </div>
+                <span class="badge badge-soft rounded-pill">أغسطس 2018 — أكتوبر 2018</span>
+              </div>
+              <p class="mt-3 text-white-50 mb-0">تدريب صيفي على أساسيات المراجعة وإعداد التقارير.</p>
+            </div>
+
+            <div class="timeline-item">
+              <div class="d-flex justify-content-between flex-wrap gap-2">
+                <div>
+                  <h3 class="h5 mb-1">Instructor (تطوع) — <span class="text-info">LinkCu</span></h3>
+                </div>
+                <span class="badge badge-soft rounded-pill">أكتوبر 2019 — أكتوبر 2020</span>
+              </div>
+              <p class="mt-3 text-white-50 mb-0">تقديم محتوى تدريبي وتطوير مهارات المشاركين.</p>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects / Highlights (optional) -->
+  <section id="projects" class="py-5">
+    <div class="container">
+      <h2 class="section-title text-center mb-4">أعمال مميزة</h2>
+      <div class="row g-4">
+        <div class="col-md-6 col-lg-4">
+          <div class="card h-100">
+            <img src="images/work1.jpg" class="card-img-top" alt="" />
+            <div class="card-body">
+              <div class="small text-muted">حوكمة &amp; امتثال</div>
+              <h3 class="h6 d-flex justify-content-between">تطوير دليل سياسات وإجراءات<span><a class="link-primary text-decoration-none" href="#">تفاصيل</a></span></h3>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4">
+          <div class="card h-100">
+            <img src="images/work2.jpg" class="card-img-top" alt="" />
+            <div class="card-body">
+              <div class="small text-muted">مراجعة خارجية</div>
+              <h3 class="h6 d-flex justify-content-between">تقرير فحص محدود لجمعية<span><a class="link-primary text-decoration-none" href="#">تفاصيل</a></span></h3>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4">
+          <div class="card h-100">
+            <img src="images/work3.jpg" class="card-img-top" alt="" />
+            <div class="card-body">
+              <div class="small text-muted">تحسين ضوابط</div>
+              <h3 class="h6 d-flex justify-content-between">تقييم مخاطر وخرائط رقابة<span><a class="link-primary text-decoration-none" href="#">تفاصيل</a></span></h3>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Education & Skills -->
+  <section id="education" class="py-5 projects">
+    <div class="container">
+      <h2 class="section-title text-center mb-4">التعليم والمهارات</h2>
+      <div class="row g-4">
+        <div class="col-lg-6">
+          <div class="card h-100 p-4">
+            <div class="d-flex align-items-start gap-3">
+              <i class="bi bi-mortarboard fs-1 text-primary"></i>
+              <div>
+                <h3 class="h5 mb-1">بكالوريوس تجارة (محاسبة وإدارة أعمال)</h3>
+                <div class="small text-muted">جامعة القاهرة · 2016 — 2020 · الدرجة: متخرج</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <div class="card h-100 p-4">
+            <div class="d-flex align-items-start gap-3">
+              <i class="bi bi-stars fs-1 text-primary"></i>
+              <div>
+                <h3 class="h5 mb-3">مهارات</h3>
+                <div class="d-flex flex-wrap gap-2">
+                  <span class="badge rounded-pill text-bg-light">المعايير المحاسبية</span>
+                  <span class="badge rounded-pill text-bg-light">إعداد القوائم</span>
+                  <span class="badge rounded-pill text-bg-light">التواصل الفعال</span>
+                  <span class="badge rounded-pill text-bg-light">العمل ضمن فريق</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="py-5">
+    <div class="container">
+      <h2 class="section-title text-center mb-4">لنعمل معًا</h2>
+      <div class="row g-4 justify-content-center">
+        <div class="col-md-5">
+          <div class="card h-100 p-4 contact-card text-center">
+            <i class="bi bi-telephone"></i>
+            <h3 class="h6 mt-3">الهاتف</h3>
+            <p class="text-muted mb-0">+201114098987</p>
+          </div>
+        </div>
+        <div class="col-md-5">
+          <div class="card h-100 p-4 contact-card text-center">
+            <i class="bi bi-envelope"></i>
+            <h3 class="h6 mt-3">البريد الإلكتروني</h3>
+            <p class="text-muted mb-0">adelmahmoudg11@gmail.com</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="py-4">
+    <div class="container d-flex flex-wrap justify-content-between align-items-center">
+      <p class="m-0">© <span class="text-primary">عادل جودة</span></p>
+      <div class="social d-flex">
+        <a href="https://www.linkedin.com/in/adel-mahmoud-bb737321b/" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+    window.addEventListener('DOMContentLoaded', function(){
+      document.querySelector('.hero')?.classList.add('show');
+    });
+  </script>
+</body>
+</html>
